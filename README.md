@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Posts Feed with Search Web Application
 
-## Getting Started
+Welcome to the Posts Feed with Search Web Application! This application allows users to create text posts, add comments, and search for both posts and comments. Read through this README to understand how to set up, use, and contribute to the project.
 
-First, run the development server:
+## User Authentication:
+Users are prompted to enter their name and password before accessing the main page.
+
+## Post Creation:
+Users can create new text posts, including a message and the user's name.
+
+## Comment Addition:
+Users can add comments to any existing post, providing a message and their name.
+
+## Search Functionality:
+- The application allows users to search for all posts and comments.
+- Search results replace the content of the latest posts.
+
+## Dynamic UI:
+- If posts are available, they are displayed.
+- If there are no posts, a message encourages the user to create a post.
+- During searches, a spinner indicates that a search is in progress.
+- If the search returns no results, a message informs the user.
+
+### Getting Started
+
+## Prerequisites
+Make sure you have the following installed on your machine:
+
+- Node.js
+- npm
+
+## Installation
+- Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/psychologicalname/kennect_assesment.git
+cd kennect_assesment
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Install dependencies:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Configuration
+- Set up your database using Prisma. Refer to the Prisma Documentation for guidance.
+- Configure your environment variables:
 
-## Learn More
+Create a .env file in the root directory and add the following:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+DATABASE_URL="your-database-url"
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=SECRET_STRING_FOR_SESSION
+```
+Replace your-database-url with the URL of your database.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Asking User for Name
+- Start the development server:
+```bash
+npm run dev
+```
 
-## Deploy on Vercel
+- Access the application in your browser.
+- Enter your name and password when prompted. 
+- Use the same name and password next time you want to log in.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Creating Posts
+- After entering your name and password, you will be redirected to the home page where you can view all posts or create one.
+- Use the provided form to create a new post.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Adding Comments
+- Click on an existing post.
+- Use the comment form to add a comment to the selected post.
+
+## Searching Posts and Comments
+- Utilize the search bar to search for posts and comments.
+- Observe the dynamic UI changes during the search process.
+
+### Contributing
+
+Contributions are welcome! Feel free to open issues or pull requests.

@@ -80,6 +80,10 @@ npm run dev
 - Utilize the search bar to search for posts and comments.
 - Observe the dynamic UI changes during the search process.
 
+## Live Demo
+You can access this project's live demo at [https://kennect-assesment.vercel.app](https://kennect-assesment.vercel.app).
+
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or pull requests.
+
